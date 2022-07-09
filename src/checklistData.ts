@@ -16,9 +16,9 @@ import {
   Throttle,
 } from './controlSettings';
 
-const BEFORE_START = [
-  MasterSwitch.ON,
+export const BEFORE_START = [
   ParkingBrakes.SET,
+  MasterSwitch.ON,
   Throttle.IDLE,
   Spoilers.OFF,
   Flaps.RETRACTED,

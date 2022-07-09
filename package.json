@@ -24,6 +24,7 @@
     "@web/test-runner": "^0.13.3",
     "chai": "^4.3.4",
     "prettier": "^2.2.1",
+    "react-checklist": "^1.0.12",
     "snowpack": "^3.3.7",
     "typescript": "^4.2.4"
   }
