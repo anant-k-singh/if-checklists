@@ -1,5 +1,8 @@
-import React from 'react';
-import { useChecklist } from 'react-checklist';
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
 
 interface Props {
   checklistName: string;
@@ -8,31 +11,21 @@ interface Props {
 
 export function Checklist(props: Props) {
   const listItems = props.listItems.map((listItem, idx) => {
-    return {
-      label: listItem,
-      _id: `${props.checklistName}-${idx}`,
-    };
-  });
-
-  const { handleCheck, checkedItems } = useChecklist(listItems, {
-    key: '_id',
-    keyType: 'string',
+    return (
+      <ListItem disablePadding key={`${props.checklistName}-${idx}`}>
+        <ListItemText primary={listItem} />
+      </ListItem>
+    );
   });
 
   return (
-    <ul>
-      <h2>{props.checklistName}</h2>
-      {listItems.map((v, i) => (
-        <li key={i}>
-          <input
-            type="checkbox"
-            data-key={v._id} // 3
-            onChange={handleCheck} // 4
-            checked={checkedItems.has(v._id)} // 5
-          />
-          <label>{v.label}</label>
-        </li>
-      ))}
-    </ul>
+    <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+      <Typography sx={{ mt: 4, mb: 1, ml: 1 }} variant="h6" component="div">
+        {props.checklistName}
+      </Typography>
+      <nav style={{ marginLeft: 40 }}>
+        <List>{listItems}</List>
+      </nav>
+    </Box>
   );
 }

@@ -5,17 +5,25 @@ Find checklists here https://anant-k-singh.github.io/if-checklists/
 
 ## Available Scripts
 
-### npm start
+### `npm start`
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.
+The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### npm run build
+### `npm test`
 
-Builds a static copy of your site to the `build/` folder.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder. Rename to `docs`\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.mjs` config file.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
