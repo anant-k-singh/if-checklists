@@ -1,6 +1,7 @@
 {
   "imports": {
     "react": "./react.js",
+    "react-checklist": "./react-checklist.js",
     "react-dom": "./react-dom.js"
   }
 }
