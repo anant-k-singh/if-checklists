@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "https://anant-k-singh.github.io/if-checklists/static/css/main.ba17183d.css",
-    "main.js": "https://anant-k-singh.github.io/if-checklists/static/js/main.01f7c84f.js",
+    "main.js": "https://anant-k-singh.github.io/if-checklists/static/js/main.e21260b4.js",
     "static/js/27.7cbfd73f.chunk.js": "https://anant-k-singh.github.io/if-checklists/static/js/27.7cbfd73f.chunk.js",
     "index.html": "https://anant-k-singh.github.io/if-checklists/index.html"
   },
   "entrypoints": [
     "static/css/main.ba17183d.css",
-    "static/js/main.01f7c84f.js"
+    "static/js/main.e21260b4.js"
   ]
 }
