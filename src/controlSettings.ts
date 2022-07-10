@@ -13,12 +13,14 @@ export enum Throttle {
 }
 
 export enum Spoilers {
-  OFF = 'Spoilers - OFF',
+  RETRACTED = 'Spoilers - RETRACTED',
   ARMED = 'Spoilers - ARMED',
 }
 
 export enum Flaps {
   RETRACTED = 'Flaps - RETRACTED',
+  TAKEOFF = 'Flaps - TAKEOFF',
+  LANDING = 'Flaps - LANDING',
 }
 
 export enum NoSmoking {
@@ -36,6 +38,10 @@ export enum FuelQuantity {
 
 export enum ATIS {
   CHECK = 'ATIS - CHECK',
+}
+
+export enum Weather {
+  CHECK = 'Weather - CHECK',
 }
 
 export enum SeatBelts {
@@ -60,9 +66,55 @@ export enum StrobeLights {
 
 export enum LandingLights {
   ON = 'Landing Lights - ON',
+  ON10K = 'Landing Lights - ON (Below 10,000 ft)',
   OFF = 'Landing Lights - OFF',
+  OFF10K = 'Landing Lights - OFF (Above 10,000 ft)',
 }
 
 export enum PushbackClearance {
   RECEIVED = 'Pushback Clearance - RECEIVED',
+}
+
+export enum TaxiClearance {
+  RECEIVED = 'Taxi Clearance - RECEIVED',
+}
+
+export enum TakeoffClearance {
+  RECEIVED = 'Takeoff Clearance - RECEIVED',
+}
+
+export enum LandingClearance {
+  RECEIVED = 'Landing Clearance - RECEIVED',
+}
+
+export enum AutoPilot {
+  ENGAGED = 'AutoPilot - Engaged',
+}
+
+export enum CruiseSpeed {
+  SET = 'Cruise Speed - SET',
+}
+
+export enum Engines {
+  START = 'Engines - STARTED',
+  IDLE = 'Engines - IDLE',
+  OFF = 'Engines - OFF',
+}
+
+export enum AutoBrakes {
+  OFF = 'AutoBrakes - OFF',
+  LOW = 'AutoBrakes - LOW',
+  MED = 'AutoBrakes - MED',
+  MAX = 'AutoBrakes - MAX',
+}
+
+export enum Trim {
+  ZERO = 'TRIM - Set to ZERO',
+  TAKEOFF = 'TRIM - Set for TAKEOFF',
+  LANDING = 'TRIM - Set for LANDING',
+}
+
+export enum LandingGear {
+  UP = 'Landing gear - UP (+ve rate)',
+  DOWN = 'Landing gear - DOWN',
 }
