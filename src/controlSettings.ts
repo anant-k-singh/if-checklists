@@ -3,6 +3,12 @@ export enum MasterSwitch {
   OFF = 'Master Switch - OFF',
 }
 
+export enum APU {
+  START = 'APU - START',
+  ON = 'APU - ON',
+  OFF = 'APU - OFF',
+}
+
 export enum ParkingBrakes {
   SET = 'Parking Brakes - SET',
   RELEASED = 'Parking Brakes - RELEASED',
@@ -97,7 +103,6 @@ export enum CruiseSpeed {
 
 export enum Engines {
   START = 'Engines - STARTED',
-  IDLE = 'Engines - IDLE',
   OFF = 'Engines - OFF',
 }
 

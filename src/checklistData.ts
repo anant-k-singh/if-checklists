@@ -1,4 +1,5 @@
 import {
+  APU,
   ATIS,
   AutoBrakes,
   AutoPilot,
@@ -28,9 +29,8 @@ import {
 export const BEFORE_START = [
   ParkingBrakes.SET,
   MasterSwitch.ON,
-  Throttle.IDLE,
-  Spoilers.RETRACTED,
-  Flaps.RETRACTED,
+  APU.START,
+  APU.ON,
   NoSmoking.ON,
   SeatBelts.OFF,
   FlightPlan.FILED,
@@ -40,17 +40,19 @@ export const BEFORE_START = [
   BeaconLights.OFF,
   StrobeLights.OFF,
   LandingLights.OFF,
+  Spoilers.RETRACTED,
+  Flaps.RETRACTED,
 ];
 
 export const BEFORE_PUSHBACK = [
-  SeatBelts.ON,
-  BeaconLights.ON,
   PushbackClearance.RECEIVED,
+  BeaconLights.ON,
+  SeatBelts.ON,
 ];
 
 export const BEFORE_TAXI = [
-  Engines.IDLE,
   Engines.START,
+  Throttle.IDLE,
   TaxiClearance.RECEIVED,
 ];
 
@@ -82,6 +84,7 @@ export const APPROACH = [
   SeatBelts.ON,
   LandingLights.ON10K,
   Spoilers.ARMED,
+  AutoBrakes.MED,
   Trim.LANDING,
   Flaps.LANDING,
   LandingGear.DOWN,
@@ -98,7 +101,10 @@ export const AFTER_LANDING = [
 export const PARKING = [
   ParkingBrakes.SET,
   Throttle.IDLE,
+  APU.START,
+  APU.ON,
   Engines.OFF,
   SeatBelts.OFF,
   BeaconLights.OFF,
+  AutoBrakes.OFF,
 ];
